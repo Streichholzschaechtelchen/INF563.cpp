@@ -9,7 +9,7 @@ int Source::mask;
 int Source::Q = 256;
 long* Source::S;
 
-long* Source::proba = new long[Q] {
+long* Source::p = new long[Q] {
     1, 1, 1, 1, 1, 1, 1, 1, 
     1, 1, 1688, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 
@@ -49,9 +49,9 @@ void Source::initialize() {
     S = new long[Q];
     
     for ( int i = 0 ; i < Q; ++i ) {
-      proba[i] = 4 * proba[i];
+      p[i] = 4 * p[i];
       S[i] = 0;
-      for ( int j = 0 ; j < i ; ++j) S[i] = S[i] + proba[j];
+      for ( int j = 0 ; j < i ; ++j) S[i] = S[i] + p[j];
     }
 
     M = 4 * M;

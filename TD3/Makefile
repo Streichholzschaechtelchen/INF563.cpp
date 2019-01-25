@@ -1,4 +1,5 @@
 C = g++
+JC = javac
 
 EXE = coder
 
@@ -6,10 +7,7 @@ OBJS = coder.o Source.o
 
 FLAGS = 
 
-all: clean launch
-
-launch: main
-	./$(EXE)
+all: clean main Decoder.class
 
 main: $(OBJS)
 	$(C) -o $(EXE) $(OBJS)
@@ -17,5 +15,8 @@ main: $(OBJS)
 %.o: %.cpp
 	$(C) -c $< $(<:.cpp=.hpp) $(FLAGS)
 
+%.class: %.java
+	$(JC) $<
+
 clean:
-	rm -f *.o $(EXE)
+	rm -f *.o $(EXE) *.class

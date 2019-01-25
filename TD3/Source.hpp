@@ -3,8 +3,8 @@
 
 class Source {
 
-private:
-  static long* proba;
+public:
+  static long* p;
 
   static int M;
   static int M2;
@@ -17,7 +17,6 @@ private:
 
   static long* S;
 
-public:
   static void initialize();
   
 };
