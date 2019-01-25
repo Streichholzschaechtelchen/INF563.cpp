@@ -1,0 +1,2 @@
+C++ base files translated from the official Java sources in Dr J. P. Tillich's Information Theory Course (INF563)
+<a href="https://www.rocq.inria.fr/secret/Jean-Pierre.Tillich/enseignement/X2015/index.html">Official webpage of the course</a>
