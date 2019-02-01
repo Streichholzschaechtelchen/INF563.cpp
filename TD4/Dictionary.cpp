@@ -35,7 +35,7 @@ int Dictionary::readInt(std::ifstream ifs, int n) {
       if (!ifs.get(c))
 	return c;
       c -= '0';
-    } while ((c != 0) && (c != -1));
+    } while ((c != 0) && (c != 1));
     if(c == 1)
       l += (1 << i);
   }
