@@ -4,17 +4,17 @@
 class Tree {
 
 private:
-  Tree **sons;
-  int index;
-  static int size;
-  static int logsize;
   static const int alphabetSize = 256;
   
 public:
+  static int size;
+  static int logsize;
+  Tree **sons;
+  int index;
   Tree();
   Tree(int);
-  void writeInt(int);
-
+  void writeInt();
+  
 };
 
 #endif

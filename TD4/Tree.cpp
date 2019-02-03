@@ -21,9 +21,11 @@ Tree::Tree(int i) {
     this->logsize++;
 }
 
-void Tree::writeInt(int n) {
-  for(int i = 0; i < this->logsize; ++i) {
+void Tree::writeInt() {
+  int n = this->index;
+  for(int i = 0; i < logsize; ++i) {
     std::cout << n % 2;
     n /= 2;
   }
 }
+
