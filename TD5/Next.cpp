@@ -7,3 +7,9 @@ void Next::add(char c, int t) {
   this->next.push_back(c);
   this->n.push_back(t);
 }
+
+Next::Next() {
+
+  ;
+
+}

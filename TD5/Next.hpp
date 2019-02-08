@@ -7,15 +7,14 @@
 
 class Next {
 
-private:
+public:
   int total = 0;
   std::vector<char> next;
   std::vector<int> n;
-
-public:
   void add(char, int);
   void doubleSize();
-
+  Next();
+ 
 };
 
 #endif

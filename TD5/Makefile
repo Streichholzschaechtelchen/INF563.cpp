@@ -9,7 +9,7 @@ FLAGS =
 all: clean launch
 
 launch: main
-	./$(EXE)
+	./$(EXE) JaneAusten.txt
 
 main: $(OBJS)
 	$(C) -o $(EXE) $(OBJS)
